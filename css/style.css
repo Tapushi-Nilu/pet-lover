@@ -269,15 +269,14 @@ p {
 .top {
   vertical-align: top !important;
   line-height: 30px;
+  font-size: 21px;
 }
 .bottom {
   vertical-align: bottom !important;
   line-height: 25px;
+  font-size: 21px;
 }
-small {
-  font-size: 22px;
-  font-weight: 400;
-}
+
 .list-group {
   margin-top: -18px;
   border-radius: inherit;
