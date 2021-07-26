@@ -9,13 +9,15 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
     <!-- Flaticon Font -->
-    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+    <link href="font/flaticon/font/flaticon.css" rel="stylesheet">
 
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/defualt.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
     <title>Pet Lover</title>
   </head>
   <body>
@@ -106,22 +108,54 @@
           <div class="row">
             <div class="col-xl-5">
               <article class="booking-form">
-                <form action="" class="form">
+                <!-- <form action="" class="form">
                   <input type="text" placeholder="Your name">
                   <input type="text" placeholder="Your email">
                   <input type="text" placeholder="Your Reservation date">
                   <input type="text" placeholder="Your Reservation date">
-                  <div class="form-group">
                     <select name="select" id="">
                       <option value="">Select a Servise</option>
                       <option value="">Select Servise 1</option>
                       <option value="">Select Servise 2</option>
                       <option value="">Select Servise 3</option>
                     </select>
-                  </div>
  
                   <button class="btn btn-info">Book Now</button>
-                </form>
+                </form> -->
+
+                <form class="py-5">
+                  <div class="form-group">
+                      <input type="text" class="form-control border-0 p-3" placeholder="Your Name" required="required" />
+                  </div>
+                  <div class="form-group">
+                      <input type="email" class="form-control border-0 p-3" placeholder="Your Email" required="required" />
+                  </div>
+                  <div class="form-group">
+                      <div class="date" id="date" data-target-input="nearest">
+                          <input type="text" class="form-control border-0 p-3 datetimepicker-input" placeholder="Reservation Date" data-target="#date" data-toggle="datetimepicker"/>
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <div class="time" id="time" data-target-input="nearest">
+                          <input type="text" class="form-control border-0 p-3 datetimepicker-input" placeholder="Reservation Time" data-target="#time" data-toggle="datetimepicker"/>
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <select class="custom-select border-0">
+                          <option selected>Select A Service</option>
+                          <option value="1">Service 1</option>
+                          <option value="2">Service 1</option>
+                          <option value="3">Service 1</option>
+                      </select>
+                  </div>
+                  <div>
+                      <button class="btn btn-dark btn-block border-0 p-3" type="submit">Book Now</button>
+                  </div>
+              </form>
+
+
+
+
               </article>
             </div>
             <div class="col-xl-7 p-5">
@@ -131,22 +165,22 @@
                 <p>Labore vero lorem eos sed aliquy ipsum aliquy sed. Vero dolore dolore takima ipsum lorem rebum</p>
                 <div class="booking-inner">
                   <div class="inner-content">
-                    <h1 class="flaticon-house text-secondary display-4"></h1>
+                    <h1 class="flaticon-house text-secondary me-2"></h1>
                     <h5>Pet Boarding</h5>
                     <p>Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet</p>
                   </div>
                   <div class="inner-content">
-                    <h1 class="flaticon-food text-secondary"></h1>
+                    <h1 class="flaticon-food text-secondary me-2"></h1>
                     <h5>Pet Boarding</h5>
                     <p>Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet</p>
                   </div>
                   <div class="inner-content">
-                    <h1 class="flaticon-grooming text-secondary"></h1>
+                    <h1 class="flaticon-grooming text-secondary me-2"></h1>
                     <h5>Pet Boarding</h5>
                     <p>Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet</p>
                   </div>
                   <div class="inner-content">
-                    <h1 class="flaticon-toy text-secondary"></h1>
+                    <h1 class="flaticon-toy text-secondary me-2"></h1>
                     <h5>Pet Boarding</h5>
                     <p>Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet</p>
                   </div>
@@ -171,19 +205,19 @@
             <li><h5><i class="fa fa-check-double text-secondary mr-3"></i>Emergency Services</h5></li>
             <li><h5><i class="fa fa-check-double text-secondary mr-3"></i>24/7 Customer Support</h5></li>
         </ul>
-        <a href="" class="btn btn-lg btn-primary mt-3 px-4">Learn More</a>
+        <a href="" class="btn btn-lg btn-primary my-3 px-4">Learn More</a>
         </div>
       </div>
       <div class="col-lg-5">
         <div class="row pe-4">
           <div class="col-12 p-0">
-            <img class="img-fluid" src="img/about-1.jpg" alt="">
+            <img class="img-fluid w-100" src="img/about-1.jpg" alt="">
           </div>
           <div class="col-6 p-0">
-            <img class="img-fluid" src="img/about-2.jpg" alt="">
+            <img class="img-fluid w-100" src="img/about-2.jpg" alt="">
           </div>
           <div class="col-6 p-0">
-            <img class="img-fluid" src="img/about-3.jpg" alt="">
+            <img class="img-fluid w-100" src="img/about-3.jpg" alt="">
           </div>
         </div>
       </div>
@@ -202,7 +236,7 @@
       </div>
       <div class="col-lg-4 col-md-6 g-4">
         <div class="service-info text-center p-5">
-          <i class="flaticon-house text-secondary"></i>
+          <i class="flaticon-house text-secondary display-2"></i>
           <h3 class="my-3">Pet Boarding</h3>
           <p>Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est magna diam eos, rebum sit vero stet ipsum justo</p>
           <a href="#" class=" text-primary">READ MORE</a>
@@ -210,7 +244,7 @@
       </div>
       <div class="col-lg-4 col-md-6 g-4">
         <div class="service-info text-center p-5">
-          <i class="flaticon-grooming text-secondary"></i>
+          <i class="flaticon-grooming text-secondary display-2"></i>
           <h3 class="my-3">Pet Boarding</h3>
           <p>Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est magna diam eos, rebum sit vero stet ipsum justo</p>
           <a href="#" class=" text-primary">READ MORE</a>
@@ -218,7 +252,7 @@
       </div>
       <div class="col-lg-4 col-md-6 g-4">
         <div class="service-info text-center p-5">
-          <i class="flaticon-food text-secondary"></i>
+          <i class="flaticon-food text-secondary display-2"></i>
           <h3 class="my-3">Pet Boarding</h3>
           <p>Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est magna diam eos, rebum sit vero stet ipsum justo</p>
           <a href="#" class=" text-primary">READ MORE</a>
@@ -226,7 +260,7 @@
       </div>
       <div class="col-lg-4 col-md-6 g-4">
         <div class="service-info text-center p-5">
-          <i class="flaticon-cat text-secondary"></i>
+          <i class="flaticon-cat text-secondary display-2"></i>
           <h3 class="my-3">Pet Boarding</h3>
           <p>Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est magna diam eos, rebum sit vero stet ipsum justo</p>
           <a href="#" class=" text-primary">READ MORE</a>
@@ -234,7 +268,7 @@
       </div>
       <div class="col-lg-4 col-md-6 g-4">
         <div class="service-info text-center p-5">
-          <i class="flaticon-vaccine text-secondary"></i>
+          <i class="flaticon-vaccine text-secondary display-2"></i>
           <h3 class="my-3">Pet Boarding</h3>
           <p>Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est magna diam eos, rebum sit vero stet ipsum justo</p>
           <a href="#" class=" text-primary">READ MORE</a>
@@ -242,7 +276,7 @@
       </div>
       <div class="col-lg-4 col-md-6 g-4">
         <div class="service-info text-center p-5">
-          <i class="flaticon-dog text-secondary"></i>
+          <i class="flaticon-dog text-secondary display-2"></i>
           <h3 class="my-3">Pet Boarding</h3>
           <p>Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est magna diam eos, rebum sit vero stet ipsum justo</p>
           <a href="#" class=" text-primary">READ MORE</a>
@@ -256,10 +290,10 @@
 <section class="choose-us">
   <div class="container">
     <div class="row">
-      <div class="col-md-5">
-        <img class="w-100" src="img/feature.jpg" alt="">
+      <div class="col-lg-5 col-md-12">
+        <img class="w-100 img-fluid" src="img/feature.jpg" alt="">
       </div>
-      <div class="col-md-7 py-5 px-3 px-lg-5">
+      <div class="col-lg-7 col-md-12 px-4 py-3">
         <div class="special-care">
           <h4 class="text-secondary">Why Choose Us?</h4>
           <h1 class="display-4 py-3"><span class="text-primary">Special Care</span>  On Pets</h1>
@@ -267,20 +301,28 @@
         </div>
         <div class="row">
           <div class="col-6">
-            <i class="flaticon-doctor text-secondary d-inline"></i>
-            <h5 class="d-inline px-2">Best In Industry</h5>
+            <div class="choose-icon py-3">
+              <i class="flaticon-doctor text-secondary d-inline display-6 me-2"></i>
+              <h5 class="d-inline px-2">Best In Industry</h5>
+            </div>
           </div>
           <div class="col-6">
-            <i class="flaticon-cat text-secondary d-inline"></i>
-            <h5 class="d-inline px-2">Emergency Services</h5>
+            <div class="choose-icon py-3">
+              <i class="flaticon-cat text-secondary d-inline display-6 me-2"></i>
+              <h5 class="d-inline px-2">Emergency Services</h5>
+            </div>
           </div>
           <div class="col-6">
-            <i class="flaticon-doctor text-secondary d-inline"></i>
-            <h5 class="d-inline px-2">Special Care</h5>
+            <div class="choose-icon py-3">
+              <i class="flaticon-cat text-secondary d-inline display-6 me-2"></i>
+              <h5 class="d-inline px-2">Special Care</h5>
+            </div>
           </div>
           <div class="col-6">
-            <i class="flaticon-cat text-secondary d-inline"></i>
-            <h5 class="d-inline px-2">Customer Suppor</h5>
+            <div class="choose-icon py-3">
+              <i class="flaticon-doctor text-secondary d-inline display-6 me-2"></i>
+              <h5 class="d-inline px-2">Customer Suppor</h5>
+            </div>
           </div>
         </div>
       </div>
@@ -368,7 +410,6 @@
     </div>
   </div>
 </section>
-
 <section class="team-member">
   <div class="container">
     <div class="row">
@@ -385,17 +426,17 @@
           </div>
           <div class="team-text-wrapper">
             <div class="team-text text-center bg-light py-3 w-100">
-              <h5 class="text-danger my-1">Mollie Ross</h5>
+              <h5 class="text-dark my-1">Mollie Ross</h5>
               <i class="text-muted">Founder & CEO</i>
             </div>
-            <div class="team-icon text-center bg-dark w-100">
-              <ul>
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-              </ul>
-            </div>
+          </div>
+          <div class="team-icon text-center bg-dark w-100">
+            <ul class="team-media">
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -406,17 +447,17 @@
           </div>
           <div class="team-text-wrapper">
             <div class="team-text text-center bg-light py-3 w-100">
-              <h5 class="text-danger my-1">Mollie Ross</h5>
+              <h5 class="text-dark my-1">Jennifar Page</h5>
               <i class="text-muted">Founder & CEO</i>
             </div>
-            <div class="team-icon text-center bg-dark w-100">
-              <ul>
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-              </ul>
-            </div>
+          </div>
+          <div class="team-icon text-center bg-dark w-100">
+            <ul class="team-media">
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -427,17 +468,17 @@
           </div>
           <div class="team-text-wrapper">
             <div class="team-text text-center bg-light py-3 w-100">
-              <h5 class="text-danger my-1">Mollie Ross</h5>
+              <h5 class="text-dark my-1">Cate Glover</h5>
               <i class="text-muted">Founder & CEO</i>
             </div>
-            <div class="team-icon text-center bg-dark w-100">
-              <ul>
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-              </ul>
-            </div>
+          </div>
+          <div class="team-icon text-center bg-dark w-100">
+            <ul class="team-media">
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -448,17 +489,17 @@
           </div>
           <div class="team-text-wrapper">
             <div class="team-text text-center bg-light py-3 w-100">
-              <h5 class="text-danger my-1">Mollie Ross</h5>
+              <h5 class="text-dark my-1">Lilly Fry</h5>
               <i class="text-muted">Founder & CEO</i>
             </div>
-            <div class="team-icon text-center bg-dark w-100">
-              <ul>
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-              </ul>
-            </div>
+          </div>
+          <div class="team-icon text-center bg-dark w-100">
+            <ul class="team-media">
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -466,67 +507,195 @@
   </div>
 </section>
 
+
+<section class="testimonials bg-color">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="price-heading text-center">
+          <h4 class="text-secondary">Testimonial</h4>
+          <h1 class="display-4 pt-3 pb-5">Our Client<span class="text-primary"> Says</span></h1>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+            <!-- Set up your HTML -->
+            <div class="owl-carousel">
+              <div class="carousel-inner">
+                <div class="bg-light mx-4">
+                  <div class="carousel-inner-img">
+                    <img src="img/testimonial-1.jpg" alt="">
+                    <h4>client Name <br> Profession </h4>
+                  </div>
+                  <p class="px-3 py-4">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum sanct clita</p>
+                </div>
+              </div>
+              <div class="carousel-inner">
+                <div class="bg-light mx-4">
+                  <div class="carousel-inner-img">
+                    <img src="img/testimonial-2.jpg" alt="">
+                    <h4>client Name <br> Profession </h4>
+                  </div>
+                  <p class="px-3 py-4">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum sanct clita</p>
+                </div>
+              </div>
+              <div class="carousel-inner">
+                <div class="bg-light mx-4">
+                  <div class="carousel-inner-img">
+                    <img src="img/testimonial-3.jpg" alt="">
+                    <h4>client Name <br> Profession </h4>
+                  </div>
+                  <p class="px-3 py-4">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum sanct clita</p>
+                </div>
+              </div>
+              <div class="carousel-inner">
+                <div class="bg-light mx-4">
+                  <div class="carousel-inner-img">
+                    <img src="img/testimonial-4.jpg" alt="">
+                    <h4>client Name <br> Profession </h4>
+                  </div>
+                  <p class="px-3 py-4">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum sanct clita</p>
+                </div>
+              </div>
+            </div>
+    </div>
+  </div>
+</section>
+
+
+
 <section class="blog">
   <div class="container">
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
+    <div class="row">
+      <div class="col-12">
+        <div class="price-heading text-center">
+          <h4 class="text-secondary">Pet Blog</h4>
+          <h1 class="display-4 pt-3 pb-5"><span class="text-primary">Updates</span> From Blog</h1>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4">
           <div class="card h-100">
             <img src="img/blog-1.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Diam amet eos at no eos</h5>
               <div class="d-flex mb-3">
                 <small class="mr-2"><i class="fa fa-user text-muted"></i> Admin</small>
-                <small class="mr-2"><i class="fa fa-folder text-muted"></i> Web Design</small>
+                <small class="mx-2"><i class="fa fa-folder text-muted"></i> Web Design</small>
                 <small class="mr-2"><i class="fa fa-comments text-muted"></i> 15</small>
-            </div>
+              </div>
               <p class="card-text">Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est diam eos, rebum sit vero stet justo</p>
             </div>
-            <div class="card-footer">
+            <div class="card-footer pb-4">
               <a href="#" class=" text-primary">READ MORE</a>
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col-lg-4">
           <div class="card h-100">
             <img src="img/blog-2.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Diam amet eos at no eos</h5>
               <div class="d-flex mb-3">
                 <small class="mr-2"><i class="fa fa-user text-muted"></i> Admin</small>
-                <small class="mr-2"><i class="fa fa-folder text-muted"></i> Web Design</small>
+                <small class="mx-2"><i class="fa fa-folder text-muted"></i> Web Design</small>
                 <small class="mr-2"><i class="fa fa-comments text-muted"></i> 15</small>
             </div>
               <p class="card-text">Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est diam eos, rebum sit vero stet justo</p>
             </div>
-            <div class="card-footer">
+            <div class="card-footer pb-4">
               <a href="#" class=" text-primary">READ MORE</a>
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col-lg-4">
           <div class="card h-100">
             <img src="img/blog-3.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Diam amet eos at no eos</h5>
               <div class="d-flex mb-3">
                 <small class="mr-2"><i class="fa fa-user text-muted"></i> Admin</small>
-                <small class="mr-2"><i class="fa fa-folder text-muted"></i> Web Design</small>
+                <small class="mx-2"><i class="fa fa-folder text-muted"></i> Web Design</small>
                 <small class="mr-2"><i class="fa fa-comments text-muted"></i> 15</small>
             </div>
               <p class="card-text">Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est diam eos, rebum sit vero stet justo</p>
             </div>
-            <div class="card-footer">
+            <div class="card-footer pb-4">
               <a href="#" class=" text-primary">READ MORE</a>
             </div>
           </div>
         </div>
       </div>
+    </div>  
   </div>
 </section>
 
+<footer class="footer">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="footer-left">
+          <h1 class="text-white"><span class="text-primary">Pet</span>Lover</h1>
+          <p class="text-white pe-3">Ipsum amet sed vero et lorem stet eos ut, labore sed sed stet sea est ipsum ut. Volup amet ea sanct ipsum, dolore vero lorem no duo eirmod. Eirmod amet ipsum no ipsum lorem clita ut. Ut sed sit lorem ea lorem sed, amet stet sit sea ea diam tempor kasd kasd. Diam nonumy etsit tempor ut sed diam sed et ea</p>
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="footer-contact">
+              <h4 class="text-primary mb-4">Get In Touch</h4>
+              <p class="text-white"><i class="fa fa-map-marker-alt me-2"></i>123 Street, New York, USA</p>
+              <p class="text-white"><i class="fa fa-phone-alt me-2"></i>+012 345 67890</p>
+              <p class="text-white"><i class="fa fa-envelope me-2"></i>info@example.com</p>
+
+              <div class="footer-icon">
+                <ul class="footer-social-icon">
+                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                  <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="footer-menu">
+              <h4 class="text-primary mb-4 ps-4"> Popular Links</h4>
+             <ul>
+              <li class="pb-2"><a class="text-white" href="#"><i class="fa fa-angle-right me-2"></i>Home</a></li>
+              <li class="pb-2"><a class="text-white" href="#"><i class="fa fa-angle-right me-2"></i>About Us</a></li>
+              <li class="pb-2"><a class="text-white" href="#"><i class="fa fa-angle-right me-2"></i>Our Service</a></li>
+              <li class="pb-2"><a class="text-white" href="#"><i class="fa fa-angle-right me-2"></i>Our Team</a></li>
+              <li class="pb-2"><a class="text-white" href="#"><i class="fa fa-angle-right me-2"></i>Contact</a></li>
+             </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="footer-right">
+              <h4 class="text-primary mb-4">Newsletter</h4>
+              <form action="">
+                  <div class="form-group">
+                      <input type="text" class="form-control p-2 border-0" placeholder="Your Name" required="required" />
+                  </div>
+                  <div class="form-group my-3">
+                      <input type="email" class="form-control p-2 border-0" placeholder="Your Email" required="required" />
+                  </div>
+                  <div>
+                      <button class="btn btn-lg btn-primary btn-block w-100 border-0" type="submit">Submit Now</button>
+                  </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js">
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
     <script src="js/owl.carousel.min.js"></script>
 
 
@@ -534,17 +703,16 @@
 
     <script>
       $('.owl-carousel').owlCarousel({
-      autoplay:false,    
+      autoplay:true,    
       loop:true,    
       dots:true,
-  
-      slideBy: 3,
+      slideBy: 1,
       responsive:{
           0:{
-              items:2
+              items:1
           },
           600:{
-              items:3
+              items:2
           },
           1000:{
               items:3
