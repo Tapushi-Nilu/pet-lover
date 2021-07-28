@@ -447,3 +447,45 @@ p {
   font-size: 18px;
   font-weight: 500;
 }
+.footer-bottom {
+  background: #111111;
+  padding: 25px 20px;
+}
+.footer-bottom p {
+  color: #fff;
+}
+.footer-bottom span {
+  font-weight: 800;
+  font-size: 17px;
+}
+.back-top {
+  position: fixed;
+  bottom: 31px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background: #ed6436;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  animation: moveTop 3s infinite;
+  animation-fill-mode: forwards;
+  transition: animation 0.3s all;
+  animation-direction: alternate;
+}
+@keyframes moveTop {
+  0% {
+    bottom: 40px;
+  }
+  50% {
+    bottom: 55px;
+  }
+  100% {
+    bottom: 40px;
+  }
+}
+.back-top a {
+  color: #fff;
+  font-size: 22px;
+}
